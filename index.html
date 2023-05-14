@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <juego de caracteres meta  =" UTF-8 ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel= "stylesheet" href ="reset.css">
+        <link  rel= "stylesheet" href ="index_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+
+    </head>
+    <body>
+        <header>
+            <h1><img src="./imagenes_alura/Logo.png" class="logoAlura" alt="logo de Alura">DECODIFICADOR DE TEXTO</h1>
+        </header>
+
+        <main>
+            <section class="input">
+                <textarea  name="input-text" id="input-text" autocomplete="off" placeholder="Ingrese el texto aquí..."></textarea>
+
+                <div>
+                    <p>Sólo letras minúsculas y sin acentos</p>
+
+                    <div class="buttons">
+                        <button  class="btnencriptar" id ="encriptar" onclick="encrypt()">Encriptar</button>
+                        <button class="btndesencriptar" id="desencriptar" onclick="desencrypt()">Desencriptar</button>
+                    </div>
+                </div>    
+
+            </section>
+            <section  class="output">
+                <div  id="not-found">
+                    <img  class="imagen_b" src ="./imagenes_alura/imagen_b.png" alt="imagen de mujer de seguridad">
+                
+                    <div  class="text-box">
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+                    </div>
+        
+                </div>
+    
+                <div clase ="result" id="result">
+                    <p class="output-text" id="output-text"></p>
+                    <button  class ="btn-copiar" id="copy" onclick="copy()">Copiar</button>
+                    <button class="btn-pegar" id="pegar" onclick="pegar()">Pegar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Para el desafio del programa Oracle One Next Education 2023. Creado por Keren Parra</p>
+        </footer>
+
+        <script src="./funciones.js"></script>
+
+    </body>
+</html> 
