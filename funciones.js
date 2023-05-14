@@ -19,9 +19,7 @@ function encrypt() {
         document.getElementById("not-found").style.display = "none";
         document.getElementById("result").style.display = "block";
         output.textContent = encriptedText;
-    } else {
-        alert("Recuerde, sólo letras minúsculas y sin acentos");
-    }
+    } 
 
     document.getElementById("pegar").style.display = "none";
 }
@@ -40,10 +38,8 @@ function desencrypt() {
         document.getElementById("not-found").style.display = "none";
         document.getElementById("result").style.display = "block";
         output.textContent = desencriptedText;
-    } else {
-        alert("Recuerde, sólo letras minúsculas y sin acentos");
-    }
-
+    } 
+    
     document.getElementById("pegar").style.display ="none";
 }
 
